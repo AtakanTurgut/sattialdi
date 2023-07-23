@@ -1,0 +1,95 @@
+﻿@model sattiAldi.Models.Cart
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="mainBody">
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar ================================================== -->
+            <div id="sidebar" class="span3">
+                @Html.Action("Summary", "Cart")
+                <ul id="sideManu" class="nav nav-tabs nav-stacked">
+                    @Html.Action("_CategoryList", "Category")
+                </ul>
+                <br />
+                @Html.Action("FeaturedProductList", "Home")
+            </div>
+            <!-- Sidebar end=============================================== -->
+            <div class="span9">
+                <ul class="breadcrumb">
+                    <li><a href="/Home/Index">Anasayfa</a> <span class="divider">/</span></li>
+                    <li class="active"> Alışveriş Sepeti</li>
+                </ul>
+                <h3>  Alışveriş Seperi  <small> </small></h3>
+                <hr class="soft" />
+
+                @if (Model.Cartlines.Count > 0)
+                {
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Adı</th>
+                                <th>Açıklama</th>
+                                <th>Adet</th>
+                                <th>Fiyat</th>
+                                <th>Toplam Fiyat</th>
+                                <th>Görüntüle</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Cartlines)
+                            {
+                                <tr>
+                                    <td><a href="/Home/ProductDetails/@item.Product.Id"><img width="60" height="60" src="~/Content/Images/@item.Product.Image" alt="" /></a></td>
+                                    <td>@item.Product.Name</td>
+                                    <td>
+                                        @item.Product.Description
+                                    </td>
+                                    <td>@item.Quantity</td>
+                                    <td>@item.Product.Price ₺</td>
+                                    <td>@((item.Product.Price* item.Quantity).ToString("c")) ₺</td>
+                                    <td>
+                                        <a class="btn btn-primary" href="/Home/ProductDetails/@item.Product.Id"><i class="icon-zoom-in"></i></a>
+                                    </td>
+                                    <td>
+                                        @using (Html.BeginForm("RemoveFromCart", "Cart"))
+                                        {
+                                            @Html.Hidden("Id", item.Product.Id)
+                                            <button type="submit" class="btn btn-m btn-danger">Kaldır </button>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <td class="label label-important" style="display:block"> Toplam Fiyat: <strong> @Model.Total().ToString("c") </strong></td>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="/Home/Product" class="btn btn-m"><i class="icon-arrow-left"></i> <strong>Alışverişe Devam Et</strong> </a>
+                    <a href="/Cart/Checkout" class="btn btn-success pull-right"><strong>Alışverişi Tamamla </strong><i class="icon-arrow-right"></i></a>
+                }
+                else
+                {
+                    <div class="alert alert-error">
+                        <button type="button" class="close" data-dismiss="alert"></button>
+                        <strong>Uyarı!</strong> Sepetinizde ürün bulunmamaktadır.
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
