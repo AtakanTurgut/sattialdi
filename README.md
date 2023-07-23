@@ -62,22 +62,21 @@ The project runs on "[localhost:?/](https://localhost:44312/)".
 
 - [ ] Use this script to see the page in Turkish [[source]](https://datatables.net/examples/advanced_init/language_file.html):
 ```html
-    <script type="text/javascript">
-        $(function () {
-            $("#example1").dataTable({
-                "language": {
-                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
-                }
-            });
-            $('#example2').dataTable({
-                "bPaginate": true,
-                "bLengthChange": false,
-                "bFilter": false,
-                "bSort": true,
-                "bInfo": true,
-                "bAutoWidth": false
-            });
+    <script type="text/javascript">$(function () {
+    $("#example1").dataTable({
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+        }
+    });
+        $('#example2').dataTable({
+          "bPaginate": true,
+          "bLengthChange": false,
+          "bFilter": false,
+          "bSort": true,
+          "bInfo": true,
+          "bAutoWidth": false
         });
+    });
     </script>
 
 ```
