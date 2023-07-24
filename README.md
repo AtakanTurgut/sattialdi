@@ -80,3 +80,55 @@ The project runs on "[localhost:?/](https://localhost:44312/)".
     </script>
 
 ```
+-----
+## SattiAldi Project [Images](https://github.com/AtakanTurgut/sattialdi/tree/main/pictures)
+
+### 1. Home Page:  https://localhost:44312/Home/Index
+![](/pictures/HomePage1.PNG) 
+![](/pictures/HomePage2.PNG)
+![](/pictures/HomePage3.PNG)
+
+### 2. Product Details Page:  https://localhost:44312/Home/ProductDetails/11
+![](/pictures/ProductDetailsPage.PNG)
+
+### 3. Register Page:  https://localhost:44312/Account/Register
+![](/pictures/RegisterPage.PNG)
+
+### 4. Login Page:  https://localhost:44312/Account/Login
+![](/pictures/LoginPage.PNG)
+
+### 5. Order Page:  https://localhost:44312/Account/Index
+![](/pictures/OrderPage.PNG)
+
+### 6. Order Details Page:  https://localhost:44312/Account/Details/2
+![](/pictures/OrderDetailsPage.PNG)
+
+### 7. Cart Page:  https://localhost:44312/Cart/Index
+![](/pictures/CartPage.PNG)
+
+### 8. Cart Checkout Page:  https://localhost:44312/Cart/Checkout
+![](/pictures/CartCheckoutPage.PNG)
+
+### 9. Admin Page:  https://localhost:44312/AdminHome/Index
+![](/pictures/AdminPage.PNG)
+
+### 10. Product List Page:  https://localhost:44312/Product/Index
+![](/pictures/ProductPage.PNG)
+
+### 11. Product Create Page:  https://localhost:44312/Product/Create
+![](/pictures/ProductCreatePage.PNG)
+
+### 12. Category Page:  https://localhost:44312/Category/Index
+![](/pictures/CategoryPage.PNG)
+
+### 13. Category Create Page:  https://localhost:44312/Category/Create
+![](/pictures/CategoryCreatePage.PNG.PNG)
+
+### 14. Order List Page:  https://localhost:44312/Order/Index
+![](/pictures/OrderListPage.PNG)
+
+### 15. Order Controller Page:  https://localhost:44312/Order/PendingOrders
+![](/pictures/OrderControllerPage.PNG)
+
+### 16. Order Details Page:  https://localhost:44312/Order/Details/1
+![](/pictures/OrderDetailsListPage.PNG.PNG)
