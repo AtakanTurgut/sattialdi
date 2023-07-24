@@ -122,7 +122,7 @@ The project runs on "[localhost:?/](https://localhost:44312/)".
 ![](/pictures/CategoryPage.PNG)
 
 ### 13. Category Create Page:  https://localhost:44312/Category/Create
-![](/pictures/CategoryCreatePage.PNG.PNG)
+![](/pictures/CategoryCreatePage.PNG)
 
 ### 14. Order List Page:  https://localhost:44312/Order/Index
 ![](/pictures/OrderListPage.PNG)
@@ -131,4 +131,4 @@ The project runs on "[localhost:?/](https://localhost:44312/)".
 ![](/pictures/OrderControllerPage.PNG)
 
 ### 16. Order Details Page:  https://localhost:44312/Order/Details/1
-![](/pictures/OrderDetailsListPage.PNG.PNG)
+![](/pictures/OrderDetailsListPage.PNG)
