@@ -38,7 +38,7 @@ The project runs on "[localhost:?/](https://localhost:44312/)".
 ## Used Packages
 
 - Some packages can be installed from the "[NuGet Gallery](https://www.nuget.org/packages/Microsoft.AspNet.Identity.Core)" with the help of the `Tools > NuGet Package Manager > Package Manager Console`.
-
+![](/pictures/NuGet.png) 
 - [EntityFramework 6.4.4](https://www.nuget.org/packages/EntityFramework/)
 ```
     PM>  NuGet\Install-Package EntityFramework -Version 6.4.4
